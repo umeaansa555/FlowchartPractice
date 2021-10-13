@@ -22,29 +22,33 @@ namespace FlowchartPractice
         {
             this.BackColor = Color.Black;
             outputLabel.Visible = true;
-            Thread.Sleep(3000);
+            startButton.Visible = false;
             Refresh();
 
             this.BackColor = Color.Red;
-            Thread.Sleep(30);
+            Thread.Sleep(300);
             Refresh();
             this.BackColor = Color.Black;
-            Thread.Sleep(30);
+            Thread.Sleep(300);
             Refresh();
             this.BackColor = Color.Red;
-            Thread.Sleep(30);
+            Thread.Sleep(300);
             Refresh();
             this.BackColor = Color.Black;
-            Thread.Sleep(1000);
+            Thread.Sleep(300);
             Refresh();
-
             exitButton.Visible = true;
+            Refresh();
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
             
             outputLabel.Text = "Good Bye";
+            Refresh();
             Thread.Sleep(2500);
             Refresh();
             Application.Exit();
-
         }
     }
 }
