@@ -24,6 +24,8 @@ namespace FlowchartPractice
             outputLabel.Visible = true;
             startButton.Visible = false;
             Refresh();
+            Thread.Sleep(3000);
+
 
             this.BackColor = Color.Red;
             Thread.Sleep(300);
@@ -45,6 +47,7 @@ namespace FlowchartPractice
         {
             
             outputLabel.Text = "Good Bye";
+            exitButton.Visible = false;
             Refresh();
             Thread.Sleep(2500);
             Refresh();
